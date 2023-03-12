@@ -111,21 +111,21 @@ input:checked~label .laber__title {
 @media (min-width: 1000px) {
   .wrapper {
     max-height: 73.60rem;
-    width: 50%;
+    width: 47%;
   }
   input:checked~label .img {
-    max-height: 30rem;
+    max-height: 23rem;
   }
   .img {
-    width: 60%;
+    width: 50%;
   }
   .wrapper__title {
-    font-size: 4rem;
+    font-size: 3.3rem;
   }
   .laber__title {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   .laber__plus {
-    font-size: 2.5rem;
+    font-size: 2.1rem;
   }
 }
