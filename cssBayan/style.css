@@ -13,11 +13,12 @@ body {
   width: 90%;
   border: 0.2rem solid black;
   background-color: rgb(255, 255, 255);
+  max-height: 35.40rem;
 }
 .wrapper__title {
   text-align: center;
   padding-top: 1rem;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 800;
   border-bottom: 0.1rem solid black;
 }
@@ -41,15 +42,12 @@ label {
 .labet__content {
   display: flex;
   justify-content: space-between;
-
 }
 .laber__title {
-  font-size: 1.4rem;
-  /* padding-left: 0.8rem; */
+  font-size: 1rem;
 }
 .laber__plus {
   font-size: 1.4rem;
-  /* transform: rotate(45deg); */
   opacity: 1;
   transition: all 0.8s ease;
 }
@@ -61,18 +59,55 @@ label {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
   display: block;
   transition: all 0.8s ease-out;
 }
 input:checked~label .img {
-  max-height: 20rem;
+  max-height: 15rem;
 }
 input:checked~label .laber__plus {
   transform: rotate(45deg);
   color: black;
+  font-weight: 900;
 }
 input:checked~label .laber__title {
   color: black;
+  font-weight: 800;
+  transition: all 0.8s ease-out;
 }
-
+@media (min-width: 820px) {
+  .laber__plus {
+    opacity: 0;
+  }
+  label:hover .img {
+    max-height: 25rem;
+  }
+  label:hover .laber__plus {
+    transform: rotate(45deg);
+    color: black;
+    opacity: 1;
+    font-weight: 800;
+    transition: all 0.8s ease-out;
+  }
+  .wrapper:hover .laber__title{
+    color: black;
+    font-weight: 800;
+    transition: all 0.8s ease-out;
+  }
+  .wrapper {
+    max-height: 73.60rem;
+  }
+  .wrapper__title {
+    font-size: 3rem;
+  }
+  .laber__title {
+    font-size: 1.5rem;
+  }
+  .laber__plus {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1000px) {
+  
+}
