@@ -25,7 +25,6 @@ body {
 .wrapper__item {
   border-bottom: 0.1rem solid black;
   color: grey;
-  
 }
 .input {
   display: none;
@@ -33,8 +32,6 @@ body {
 label {
   cursor: pointer;
   display: block;
-}
-.inpit-1 {
 }
 .wrapper__laber {
   padding: 0.1% 5% 0.1%;
@@ -96,7 +93,7 @@ input:checked~label .laber__title {
     transition: all 0.8s ease-out;
   }
   .wrapper {
-    max-height: 73.60rem;
+    max-height: 67.40rem;
   }
   .wrapper__title {
     font-size: 3rem;
@@ -107,7 +104,28 @@ input:checked~label .laber__title {
   .laber__plus {
     font-size: 2rem;
   }
+  .img {
+    width: 70%;
+  }
 }
 @media (min-width: 1000px) {
-  
+  .wrapper {
+    max-height: 73.60rem;
+    width: 50%;
+  }
+  input:checked~label .img {
+    max-height: 30rem;
+  }
+  .img {
+    width: 60%;
+  }
+  .wrapper__title {
+    font-size: 4rem;
+  }
+  .laber__title {
+    font-size: 2rem;
+  }
+  .laber__plus {
+    font-size: 2.5rem;
+  }
 }
