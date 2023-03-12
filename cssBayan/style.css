@@ -87,6 +87,12 @@ input:checked~label .laber__title {
     font-weight: 800;
     transition: all 0.8s ease-out;
   }
+  .wrapper:hover .laber__plus {
+    color: black;
+    opacity: 1;
+    font-weight: 800;
+    transition: all 0.8s ease-out;
+  }
   .wrapper:hover .laber__title{
     color: black;
     font-weight: 800;
